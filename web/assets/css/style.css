@@ -11,11 +11,13 @@
 :root {
 	--main-color: #15B3D8;
 	--secondary-color: #F79321;
+	--secondary-color-soft: #feeee7;
 	--text-color: #000000;
 	--bg-color: #ffffff;
 	--big-font: 5rem;
 	--h2-font: 2.25rem;
 	--p-font: 0.9rem;
+	--font1: "MV Boli", sans-serif;;
 }
 *::selection {
 	background: var(--main-color);
@@ -36,6 +38,9 @@ header {
 	justify-content: space-between;
 	padding: 30px 170px;
 	background: var(--bg-color);
+}
+header .logo {
+	height: 30px;
 }
 .logo {
 	color: var(--main-color);
@@ -95,7 +100,7 @@ section {
 	padding: 70px 0;
 }
 .hero-image {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/hero.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/room3.jpeg");
 	height: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -107,11 +112,12 @@ section {
 	margin: 200px 0;
 }
 .hero-text h1{
+	font-family: var(--font1);
 	font-size: var(--big-font);
 	color: white;
 }
 .hero-text h2{
-	
+	font-weight: 300;
 	margin: 1rem 0 2rem;
 	color: white;
 }
@@ -157,7 +163,7 @@ section {
 .heading h2 {
 	font-size: var(--h2-font);
 }
-.program-container {
+.advantages-container {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(220px, auto));
 	grid-gap: 1.5rem;
@@ -171,17 +177,19 @@ section {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background: #feeee7;
+	background: var(--main-color);
 	padding: 20px;
 	border-radius: 0.5rem;
+	color: white;
+	text-align: center;
 }
 .box-img {
-	width: 220px;
-	height: 220px;
+	width: 250px;
 }
 .box-img img {
-	width: 100%;
-	height: 100%;
+	margin: 10px 0 0 0;
+	width: 50%;
+	height: 75%;
 }
 .box h2 {
 	font-size: 1.3rem;
@@ -195,36 +203,40 @@ section {
 	font-size: var(--p-font);
 	margin: 4px 0 10px;
 }
-.facility-container {
+.services-container {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(240px, auto));
 	grid-gap: 1.5rem;
 	margin-top: 4rem;
 }
-.facility-box {
+.services-box {
 	text-align: center;
 	padding: 20px 30px;
 }
-.facility-box img {
-	width: 90px;
+.services-box img {
+	width: 75px;
 }
-.facility-box h3 {
+.services-box h3 {
 	margin: 4px 0 10px;
 	color: var(--main-color);
 	font-size: 1.2rem;
 }
-.facility-box p {
+.services-box p {
 	line-height: 1.7;
 }
 .cta {
 	background: var(--main-color);
-	padding: 70px 0;
+	padding: 70px 17%;
 	text-align: center;
 	width: 100%;
 	margin: 100px auto;
-	
+}
+.cta p {
+	color: white;
+	margin: 0 0 20px 0;
 }
 .cta h2 {
+	font-family: var(--font1);
 	font-size: 2rem;
 	color: white;
 	margin-bottom: 30px;
@@ -240,12 +252,15 @@ section {
 	transform: scale(1.2);
 	transition: .4s;
 }
+.footer {
+	padding: 70px 17%;
+}
+.footer-container {
+	padding: 10px 0;
+}
 .main {
 	display: flex;
 	flex-wrap: wrap;
-}
-.footer {
-	padding: 10px 0;
 }
 .col {
 	width: 25%;
@@ -279,6 +294,15 @@ section {
 	color: var(--text-color);
 	transform: translateX(-12px);
 }
+.col:last-child {
+	width: 50%;
+}
+.col .kontak {
+	display: flex;
+}
+.col .kontak .kontak-col{
+	margin: 0 20px 0 0;
+}
 .col .social {
 	width: 220px;
 	display: flex;
@@ -302,6 +326,10 @@ section {
 	color: var(--text-color);
 	background: var(--bg-color);
 }
+.footer p {
+	margin-bottom: 15px;
+}
+
 
 @media (max-width: 1560px) {
 	header {
@@ -343,12 +371,21 @@ section {
 		width: 50%;
 		margin-bottom: 10px;
 	}
+	.col:last-child {
+		width: 100%;
+	}
+	.col .kontak {
+		display: block;
+	}
+	.col .kontak .kontak-col{
+		margin: 0 0 10px 0;
+	}
 }
 @media (max-width: 720px) {
 	header {
 		padding: 10px 16px;
 	}
-	.program {
+	.advantages {
 		grid-template-columns: 1fr;
 		text-align: center;
 	}
@@ -366,6 +403,5 @@ section {
 @media (max-width: 575px) {
 	.col {
 		width: 100%;
-		
 	}
 }

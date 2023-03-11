@@ -7,7 +7,10 @@
 	list-style: none;
 	text-decoration: none;
 }
-
+@font-face {
+	font-family: "MV Boli", sans-serif;
+	url: url("../fonts/mvboli.ttf") format("truetype");
+}
 :root {
 	--main-color: #15B3D8;
 	--secondary-color: #F79321;
@@ -17,7 +20,7 @@
 	--big-font: 5rem;
 	--h2-font: 2.25rem;
 	--p-font: 0.9rem;
-	--font1: "MV Boli", sans-serif;;
+	--font1: "MV Boli", sans-serif;
 }
 *::selection {
 	background: var(--main-color);

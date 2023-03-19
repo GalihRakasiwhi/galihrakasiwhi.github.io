@@ -199,6 +199,7 @@ header .logo {
 	top: 60%;
 	width: 215px;
 	font-size: var(--card-font);
+	line-height: 1.5;
 }
 .facility-container {
 	margin-top: 4rem;
@@ -238,13 +239,15 @@ header .logo {
 	background: var(--bg-color2);
 }
 .services-container {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(240px, auto));
-	grid-gap: 1.5rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	margin-top: 4rem;
 }
 .services-box {
+	margin: 0 1rem 2rem 0;
 	text-align: center;
+	width: 250px;
 	padding: 20px 30px;
 }
 .services-box img {
@@ -256,7 +259,8 @@ header .logo {
 	font-size: 1.2rem;
 }
 .services-box p {
-	line-height: 1.7;
+	line-height: 1.5;
+	font-size: var(--card-font);
 }
 .cta {
 	background: var(--main-color);

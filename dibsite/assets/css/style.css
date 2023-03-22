@@ -62,6 +62,12 @@ header .logo {
 	opacity: 1;
 	left: 0;
 }
+.disable {
+	opacity: .5;
+	cursor: not-allowed;
+	pointer-events: none;
+}
+
 .logo {
 	color: var(--main-color);
 	font-weight: 600;
@@ -95,7 +101,7 @@ header .logo {
 	padding: 70px 0;
 }
 .hero-image {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/room3.jpeg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/location2.jpeg");
 	height: 100%;
 	background-position: center;
 	background-repeat: no-repeat;

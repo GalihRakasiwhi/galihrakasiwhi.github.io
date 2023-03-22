@@ -9,7 +9,7 @@ menu.addEventListener("click", function () {
 window.onscroll = () => {
 	navbar.classList.remove("active");
 };
-
+/*
 // muncul setelah di scroll
 let about = document.querySelector("#about");
 let benefit = document.querySelector("#benefit");
@@ -17,7 +17,7 @@ let facility = document.querySelector("#facility");
 let services = document.querySelector("#services");
 let cta = document.querySelector("#cta");
 let footer = document.querySelector("#footer");
-/*
+
 window.onload = function() {
 	about.classList.add("hide");
 	benefit.classList.add("hide");

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DC-Corner Menu</title>
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+			font-family: 'poppins', sans-serif;
+			scroll-behavior: smooth;
+			list-style: none;
+			text-decoration: none;
+		}
+		.menu {
+			margin: auto;
+		}
+		.menu .page {
+			position: fixed;
+			margin: 1rem;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+		.menu .page a {
+			padding: .3rem .5rem;
+			margin: 0 0 0 .2rem;
+			border-radius: 10px;
+			background-color: #a98467;
+			color: white;
+			font-size: 12pt;
+		}
+		.menu .page a:hover {
+			background-color: #d5bdaf;
+			transition: .5s;
+		}
+		.menu img {
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="menu">
+		<div class="page">
+			<a href="#menu-1">Page 1</a>
+			<a href="#menu-2">Page 2</a>
+			<a href="#menu-3">Page 3</a>
+		</div>
+		<img id="menu-1" src="menu-1.jpeg">
+		<img id="menu-2" src="menu-1.jpeg">
+		<img id="menu-3" src="menu-1.jpeg">
+	</div>
+</body>
+</html>

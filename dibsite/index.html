@@ -1,33 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>dib site</title>
+	<title>dibsite</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
 	<link href='assets/vendors/boxicons/css/boxicons.min.css' rel='stylesheet'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 	<header>
 		<a href="/"><img class="logo" src="assets/images/logo_dibsite.svg"></a>
-		<div class="bx bx-menu" id="menu-icon"></div>
-		<ul class="navbar">
-			<li><a href="#about">About</a></li>
-			<li><a href="#benefit">Benefit</a></li>
-			<li><a href="#facility">Facility</a></li>
-			<li><a href="#services">Services</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
+		<div class="nav-container">
+			<ul class="navbar">
+				<li><a href="#about" data_key="nav_about">About</a></li>
+				<li><a href="#benefit" data_key="nav_benefit">Benefit</a></li>
+				<li><a href="#facility" data_key="nav_facility">Facility</a></li>
+				<li><a href="#services" data_key="nav_services">Services</a></li>
+				<li><a href="#contact" data_key="nav_contact">Contact</a></li>
+			</ul>
+			<div class="langs">
+				<a href="#" id="en">EN</a><a href="#" id="id">ID</a>
+			</div>
+			<div class="bx bx-menu" id="menu-icon"></div>
+		</div>
 	</header>
 	<!-- hero section -->
 	<section class="hero" id="hero">
 		<div class="hero-image">
 			<div class="hero-text">
-				<h1>Digital Innovation & Business Hub</h1>
-				<h2>A place to create and collaborate ideas to be  sustainable businesses.</h2> 
-				<a href="#about" class="btn">About Us</a>
+				<h1 data_key="hero_title">Digital Innovation & Business Hub</h1>
+				<h2 data_key="hero_p">A place to create and collaborate ideas to be  sustainable businesses.</h2> 
+				<a href="#about" class="btn" data_key="hero_btn">About Us</a>
 			</div>
 		</div>
 	</section>
@@ -37,43 +43,43 @@
 		<div class="about-img"><img src="assets/images/coworking illustration.svg"></div>
 		<div class="about-text">
 			<span>About</span>
-			<h2>Digital Innovation & Business Hub</h2>
-			<p>Dibsite adalah ruang yang dirancang untuk menciptakan lingkungan kerja yang nyaman, produktif dan kolaboratif bagi berbagai komunitas, inovator, konten creator, entitas kreatif digital maupun pelaku bisnis di Kota Bandung.</p>
-			<a href="https://wa.me/+6281220110689" class="btn" target="_blank">Contact Us</a>
+			<h2 data_key="about_title">Digital Innovation & Business Hub</h2>
+			<p data_key="about_p">Dibsite adalah ruang yang dirancang untuk menciptakan lingkungan kerja yang nyaman, produktif dan kolaboratif bagi berbagai komunitas, inovator, konten creator, entitas kreatif digital maupun pelaku bisnis di Kota Bandung.</p>
+			<a href="https://wa.me/+6281220110689" class="btn" target="_blank" data_key="about_btn">Contact Us</a>
 		</div>
 	</section>
 
 	<!-- benefit section -->
 	<section class="benefit" id="benefit">
 		<div class="heading">
-			<span>Benefit</span>
-			<h2>Kenapa Memilih Kami?</h2>
+			<span data_key="benefit_container_text">Benefit</span>
+			<h2 data_key="benefit_title">Kenapa Memilih Kami?</h2>
 		</div>
 		<div class="benefit-container">
 			<div class="card">
 				<img src="assets/images/location.jfif">
 				<div class="gradient-card"></div>
-				<p>Lokasi berada dikawasan elit yang strategis di Kota Bandung sehingga memudahkan akses baik bagi pengguna dalam kota maupun yang berasal dari luar kota.</p>
+				<p data_key="benefit_p_card1">Lokasi berada dikawasan elit yang strategis di Kota Bandung sehingga memudahkan akses baik bagi pengguna dalam kota maupun yang berasal dari luar kota.</p>
 			</div>
 			<div class="card">
 				<img src="assets/images/room4.jpeg">
 				<div class="gradient-card"></div>
-				<p>Pilihan ruang dengan berbagai kapasitas, berupa privat office , coworking, meeting room, class room dan function room.</p>
+				<p data_key="benefit_p_card2">Pilihan ruang dengan berbagai kapasitas, berupa privat office , coworking, meeting room, class room dan function room.</p>
 			</div>
 			<div class="card">
 				<img src="assets/images/outdor.jpeg">
 				<div class="gradient-card"></div>
-				<p>Terdapat fasilitas area kerja terbuka, Podcast studio, Foto/video studio, Lounge room.</p>
+				<p data_key="benefit_p_card3">Terdapat fasilitas area kerja terbuka, Podcast studio, Foto/video studio, Lounge room.</p>
 			</div>
 			<div class="card">
 				<img src="assets/images/internet.jpeg">
 				<div class="gradient-card"></div>
-				<p>Tersedia jaringan internet yang memadai dan mempunya akses langsung ke jurnal-jurnal internasional, printer scanner bersama.</p>
+				<p data_key="benefit_p_card4">Tersedia jaringan internet yang memadai dan mempunya akses langsung ke jurnal-jurnal internasional, printer scanner bersama.</p>
 			</div>
 			<div class="card">
 				<img src="assets/images/cafe2.jpeg">
 				<div class="gradient-card"></div>
-				<p>Fasilitas pendukung lainnya seperti layanan resepsionis, area parkir luas, mushola, toilet dan kamar mandi pria dan wanita yang terpisah, café corner.</p>
+				<p data_key="benefit_p_card5">Fasilitas pendukung lainnya seperti layanan resepsionis, area parkir luas, mushola, toilet dan kamar mandi pria dan wanita yang terpisah, café corner.</p>
 			</div>
 		</div>
 	</section>
@@ -81,51 +87,51 @@
 <!-- facility section -->
 	<section class="facility" id="facility">
 		<div class="heading">
-			<span>Facility</span>
-			<h2>Pilihan Ruangan dan Fasilitas</h2>
+			<span data_key="facility_container_text">Facility</span>
+			<h2 data_key="facility_title">Pilihan Ruangan dan Fasilitas</h2>
 		</div>
 		<div class="facility-container">
 			<div class="card">
 				<img src="assets/images/icon/icon_private_office.svg">
-				<h3>Private Office</h3>
-				<p>Ruang kerja dengan beberapa pilihan ukuran ruangan yang berkapasitas mulai dari 2 hingga 19 orang.</p>
+				<h3 data_key="facility_card1_title">Private Office</h3>
+				<p data_key="facility_card1_p">Ruang kerja dengan beberapa pilihan ukuran ruangan yang berkapasitas mulai dari 2 hingga 19 orang.</p>
 			</div>
 			<div class="card">
 				<img src="assets/images/icon/icon_office_space.svg">
-				<h3>Coworking Space</h3>
-				<p>Ruang yang ditempati secara bersama dengan meja semi cubical dengan kapasitas sampai dengan 12 orang. Setiap meja memiliki sekat untuk menjaga kenyamanan dan privasi. Ruangan ini juga dilengkapi fasilitas loker.</p>
+				<h3 data_key="facility_card2_title">Coworking Space</h3>
+				<p data_key="facility_card2_p">Ruang yang ditempati secara bersama dengan meja semi cubical dengan kapasitas sampai dengan 12 orang. Setiap meja memiliki sekat untuk menjaga kenyamanan dan privasi. Ruangan ini juga dilengkapi fasilitas loker.</p>
 			</div>
 			<div class="card">
 				<img src="assets/images/icon/icon_meeting_class_room.svg">
-				<h3>Meeting/Class Room</h3>
-				<p>Ruangan yang dapat digunakan sebagai meeting room ataupun class room berkapasitas  untuk 2 – 18 orang.</p>
+				<h3 data_key="facility_card3_title">Meeting/Class Room</h3>
+				<p data_key="facility_card3_p">Ruangan yang dapat digunakan sebagai meeting room ataupun class room berkapasitas  untuk 2 – 18 orang.</p>
 			</div>
 			<div class="card">
 				<img src="assets/images/icon/icon_function_room.svg">
-				<h3>Function Room</h3>
-				<p>Ruang serbaguna yang dapat juga digunakan untuk ruang kelas berkapasitas 45 orang atau seminar berkapasitas 70 orang.</p>
+				<h3 data_key="facility_card4_title">Function Room</h3>
+				<p data_key="facility_card4_p">Ruang serbaguna yang dapat juga digunakan untuk ruang kelas berkapasitas 45 orang atau seminar berkapasitas 70 orang.</p>
 			</div>
 			<div class="card">
 				<img src="assets/images/icon/icon_virtual_office.svg">
-				<h3>Virtual Office</h3>
-				<p>Menyediakan alamat kantor yang kredibel dan profesional untuk kebutuhan bisnis. Dapat di lengkapi berbagai layanan lain seperti layanan surat menyurat,  penggunaan ruang meeting & coworking.</p>
+				<h3 data_key="facility_card5_title">Virtual Office</h3>
+				<p data_key="facility_card5_p">Menyediakan alamat kantor yang kredibel dan profesional untuk kebutuhan bisnis. Dapat di lengkapi berbagai layanan lain seperti layanan surat menyurat,  penggunaan ruang meeting & coworking.</p>
 			</div>
 			<div class="card">
 				<img src="assets/images/icon/icon_online_meeting_box.svg">
-				<h3>Online Meeting Room</h3>
-				<p>Ruang meeting online yang didesign kedap suara bertujuan untuk menjaga privasi pada saat meeting online.</p>
+				<h3 data_key="facility_card6_title">Online Meeting Room</h3>
+				<p data_key="facility_card6_p">Ruang meeting online yang didesign kedap suara bertujuan untuk menjaga privasi pada saat meeting online.</p>
 			</div>
 			<div class="card" style="background-color: #f2f2f2; border: 1px solid #999999;">
 				<div class="label">Comming Soon</div>
 				<img src="assets/images/icon/icon_podcast_studio.svg">
-				<h3 style="color: #999999">PodCast Studio</h3>
-				<p style="color: #999999">Ruang rekaman asli audio atau video yang dapat digunakan utuk kebutuhan pembuatan konten digital.</p>
+				<h3 style="color: #999999" data_key="facility_card7_title">PodCast Studio</h3>
+				<p style="color: #999999" data_key="facility_card7_p">Ruang rekaman asli audio atau video yang dapat digunakan utuk kebutuhan pembuatan konten digital.</p>
 			</div>
 			<div class="card" style="background-color: #f2f2f2; border: 1px solid #999999;">
 				<div class="label">Comming Soon</div>
 				<img src="assets/images/icon/icon_studio_foto.svg">
-				<h3 style="color: #999999">Photo Studio</h3>
-				<p style="color: #999999">Studio Foto dan video yang dilengkapi dengan lighting yang berkualitas serta berbagai pilihan screen.</p>
+				<h3 style="color: #999999" data_key="facility_card8_title">Photo Studio</h3>
+				<p style="color: #999999" data_key="facility_card8_p">Studio Foto dan video yang dilengkapi dengan lighting yang berkualitas serta berbagai pilihan screen.</p>
 			</div>
 		</div>
 	</section>
@@ -133,43 +139,43 @@
 	<!-- services section -->
 	<section class="services" id="services">
 		<div class="heading">
-			<span>Services</span>
-			<h2>Layanan Kami</h2>
+			<span data_key="services_container_text">Services</span>
+			<h2 data_key="services_title">Layanan Kami</h2>
 		</div>
 		<div class="services-container">
 			<div class="services-box">
 				<img src="assets/images/icon/icon_talent_hub.svg" id="services-1">
-				<h3>Talent HUB</h3>
-				<p>Ruang kolaborasi antar komunitas, inkubator, brand, konten kreator dan entitas kreatif digital dan pelaku bisnis di dalam maupun luar Kota Bandung.</p>
+				<h3 data_key="services_card1_title">Talent HUB</h3>
+				<p data_key="services_card1_p">Ruang kolaborasi antar komunitas, inkubator, brand, konten kreator dan entitas kreatif digital dan pelaku bisnis di dalam maupun luar Kota Bandung.</p>
 			</div>
 			<div class="services-box">
 				<img src="assets/images/icon/icon_talent_hunt.svg" id="services-2">
-				<h3>Talent Hunt</h3>
-				<p>Membantu Anda yang membutuhkan talenta digital untuk kebutuhan pengembangan aplikasi.</p>
+				<h3 data_key="services_card2_title">Talent Hunt</h3>
+				<p data_key="services_card2_p">Membantu Anda yang membutuhkan talenta digital untuk kebutuhan pengembangan aplikasi.</p>
 			</div>
 			<div class="services-box">
 				<img src="assets/images/icon/icon_manage_services.svg" id="services-3">
-				<h3>Manage Services</h3>
-				<p>Memberikan layanan berupa tim engineer untuk membantu keberlangsungan pengembangan bisnis.</p>
+				<h3 data_key="services_card3_title">Manage Services</h3>
+				<p data_key="services_card3_p">Memberikan layanan berupa tim engineer untuk membantu keberlangsungan pengembangan bisnis.</p>
 			</div>
 			<div class="services-box">
 				<img src="assets/images/icon/icon_sp_development.svg" id="services-4">
-				<h3>Software Product Development</h3>
-				<p>Memberikan layanan untuk membangun web profile, web bisnis, maupun produk aplikasi mobile bisnis sesuai kebutuhan dengan design dan performa yang baik dan terjaga.</p>
+				<h3 data_key="services_card4_title">Software Product Development</h3>
+				<p data_key="services_card4_p">Memberikan layanan untuk membangun web profile, web bisnis, maupun produk aplikasi mobile bisnis sesuai kebutuhan dengan design dan performa yang baik dan terjaga.</p>
 			</div>
 			<div class="services-box">
 				<img src="assets/images/icon/icon_event_organizing.svg" id="services-5">
-				<h3>Event Organizing</h3>
-				<p>Layanan mengelola sebuah event, workshop, seminar, komunitas dan f&b.</p>
+				<h3 data_key="services_card5_title">Event Organizing</h3>
+				<p data_key="services_card5_p">Layanan mengelola sebuah event, workshop, seminar, komunitas dan f&b.</p>
 			</div>
 		</div>
 	</section>
 
 	<!-- cta section -->
 	<section class="cta" id="cta">
-		<h2>Success Stories</h2>
-		<p>Dengan pengalaman lebih dari 4 tahun dalam pengembangan aplikasi, portofolio kami bersama dengan TELKOM dan perusahaan swasta lainnya dalam pengembangan aplikasi dibilang sangat sukses.</p>
-		<a href="https://wa.me/+6281220110689" class="btn" target="_blank">Contact Us</a>
+		<h2 data_key="cta_title">Success Stories</h2>
+		<p data_key="cta_p">Dengan pengalaman lebih dari 4 tahun dalam pengembangan aplikasi, portofolio kami bersama dengan TELKOM dan perusahaan swasta lainnya dalam pengembangan aplikasi dibilang sangat sukses.</p>
+		<a href="https://wa.me/+6281220110689" class="btn" target="_blank" data_key="cta_btn">Contact Us</a>
 	</section>
 
 	<!-- footer section -->
@@ -179,10 +185,10 @@
 				<div class="col">
 					<h4>Link</h4>
 					<ul>
-						<li><a href="#about">About</a></li>
-						<li><a href="#benefit">Benefit</a></li>
-						<li><a href="#facility">Facility</a></li>
-						<li><a href="#services">Services</a></li>
+						<li><a href="#about" data_key="nav_about">About</a></li>
+						<li><a href="#benefit" data_key="nav_benefit">Benefit</a></li>
+						<li><a href="#facility" data_key="nav_facility">Facility</a></li>
+						<li><a href="#services" data_key="nav_services">Services</a></li>
 					</ul>
 				</div>
 				<div class="col">
@@ -220,5 +226,6 @@
 
 	<!-- js -->
 	<script type="text/javascript" src="assets/js/script.js"></script>
+	<script type="text/javascript" src="assets/js/lang.js"></script>
 </body>
 </html>

@@ -94,16 +94,18 @@ header .logo {
 .langs {
 	margin: auto 5px auto 0;
 }
-.langs a {
+.langs button {
 	color: white;
+	border: none;
 	background-color: var(--main-color);
 	padding: 5px 10px;
 	transition: .5s;
 }
-.langs a:hover {
+.langs button:hover {
+	cursor: pointer;
 	background-color: var(--main-color-hover);
 }
-.langs a.active {
+.langs button.active {
 	background-color: var(--secondary-color);	
 }
 

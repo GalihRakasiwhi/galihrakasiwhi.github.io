@@ -69,7 +69,7 @@ let data = {
 		services_card3_title: "Manage Services",
 		services_card3_p: "Engineering team would be provided to help the business development continuity.",
 		services_card4_title: "Software Product Development",
-		services_card4_p: "We give you a service either to develop we  profile, web business or application of mobile business product which is designed well and in line with the business need.",
+		services_card4_p: "We give you a service either to develop web profile, web business or application of mobile business product which is designed well and in line with the business need.",
 		services_card5_title: "Event Organizing",
 		services_card5_p: "We organize events, workshops, seminars, communities and F&B.",
 		cta_title: "Success Stories",

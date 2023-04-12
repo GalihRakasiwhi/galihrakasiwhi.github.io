@@ -117,7 +117,7 @@ let data = {
 		services_title: "Layanan Kami",
 		services_card1_title: "Talent HUB",
 		services_card1_p: "Ruang kolaborasi antar komunitas, inkubator, brand, konten kreator dan entitas kreatif digital dan pelaku bisnis di dalam maupun luar Kota Bandung.",
-		services_card2_ttle: "Talent Hunt",
+		services_card2_title: "Talent Hunt",
 		services_card2_p: "Membantu Anda yang membutuhkan talenta digital untuk kebutuhan pengembangan aplikasi.",
 		services_card3_title: "Manage Services",
 		services_card3_p: "Memberikan layanan berupa tim engineer untuk membantu keberlangsungan pengembangan bisnis.",

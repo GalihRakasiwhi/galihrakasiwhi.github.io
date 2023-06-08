@@ -305,35 +305,40 @@ header .logo {
 	line-height: 1.5;
 	font-size: var(--card-font);
 }
-.partner {
+.tenant {
 	padding: 70px 0;
 }
-.partner h2 {
+.tenant h2 {
 	font-size: var(--h2-font);
 }
-.partner .logo_container {
+.tenant .logo_container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	margin-top: 2rem;
 	width: 100%;
 }
-.partner .logo_item {
+.tenant .logo_item {
 	margin-left: 1rem;
 	padding: 1rem;
 	display: flex;
 	flex-direction: column;
 }
-.partner .logo_item img {
-	height: 7rem;
+.tenant .logo_item img {
+	height: 5rem;
 	margin-inline: 2rem;
+	filter: gray; /* IE6-9 */
+  	-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  	filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
 	transition: .3s ease;
 }
-.partner .logo_item img:hover {
+.tenant .logo_item img:hover {
+	-webkit-filter: grayscale(0);
+	filter: none;
 	transform: scale(1.1);
 	transition: .4s;
 }
-.partner .logo_item p {
+.tenant .logo_item p {
 	text-align: center;
 	font-size: 12px;
 }
@@ -518,12 +523,11 @@ header .logo {
 	.col {
 		width: 100%;
 	}
-	.partner .logo_item {
+	.tenant .logo_item {
 		margin-left: .5rem;
 		padding: .5rem;
 	}
-	.partner .logo_item img {
-		height: 5rem;
+	.tenant .logo_item img {
 		margin-inline: 1rem;
 	}
 }
@@ -531,21 +535,20 @@ header .logo {
 	.col {
 		width: 100%;
 	}
-	.partner .logo_item {
+	.tenant .logo_item {
 		margin-left: .5rem;
 		padding: .5rem;
 	}
-	.partner .logo_item img {
-		height: 5rem;
+	.tenant .logo_item img {
 		margin-inline: 1rem;
 	}
 }
 @media (max-width: 407px) {
-	.partner .logo_item {
+	.tenant .logo_item {
 		margin-left: .5rem;
 		padding: .5rem;
 	}
-	.partner .logo_item img {
+	.tenant .logo_item img {
 		height: 4rem;
 		margin-inline: 1rem;
 	}

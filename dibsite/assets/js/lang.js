@@ -164,8 +164,8 @@ function translate(konten) {
 	document.querySelector("[data_key='facility_card5_p']").innerHTML = konten.facility_card5_p;
 	document.querySelector("[data_key='facility_card6_title']").innerHTML = konten.facility_card6_title;
 	document.querySelector("[data_key='facility_card6_p']").innerHTML = konten.facility_card6_p;
-	document.querySelector("[data_key='facility_card7_title']").innerHTML = konten.facility_card7_title;
-	document.querySelector("[data_key='facility_card7_p']").innerHTML = konten.facility_card7_p;
+	//document.querySelector("[data_key='facility_card7_title']").innerHTML = konten.facility_card7_title;
+	//document.querySelector("[data_key='facility_card7_p']").innerHTML = konten.facility_card7_p;
 	document.querySelector("[data_key='facility_card8_title']").innerHTML = konten.facility_card8_title;
 	document.querySelector("[data_key='facility_card8_p']").innerHTML = konten.facility_card8_p;
 	document.querySelector("[data_key='services_container_text']").innerHTML = konten.services_container_text;

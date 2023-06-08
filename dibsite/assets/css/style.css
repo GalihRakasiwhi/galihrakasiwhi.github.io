@@ -316,8 +316,7 @@ header .logo {
 	flex-wrap: wrap;
 	justify-content: center;
 	margin-top: 2rem;
-}
-.partner .logo_wrapper {
+	width: 100%;
 }
 .partner .logo_item {
 	margin-left: 1rem;
@@ -515,8 +514,39 @@ header .logo {
 		padding: 100px 7%;
 	}
 }
+@media (max-width: 671px) {
+	.col {
+		width: 100%;
+	}
+	.partner .logo_item {
+		margin-left: .5rem;
+		padding: .5rem;
+	}
+	.partner .logo_item img {
+		height: 5rem;
+		margin-inline: 1rem;
+	}
+}
 @media (max-width: 575px) {
 	.col {
 		width: 100%;
+	}
+	.partner .logo_item {
+		margin-left: .5rem;
+		padding: .5rem;
+	}
+	.partner .logo_item img {
+		height: 5rem;
+		margin-inline: 1rem;
+	}
+}
+@media (max-width: 407px) {
+	.partner .logo_item {
+		margin-left: .5rem;
+		padding: .5rem;
+	}
+	.partner .logo_item img {
+		height: 4rem;
+		margin-inline: 1rem;
 	}
 }

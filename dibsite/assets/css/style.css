@@ -305,6 +305,46 @@ header .logo {
 	line-height: 1.5;
 	font-size: var(--card-font);
 }
+.partner {
+	padding: 70px 0;
+}
+.partner h2 {
+	font-size: var(--h2-font);
+}
+.partner .logos_slider {
+	margin-top: 4rem;
+	overflow-x: hidden;
+	position: relative;
+}
+.partner .slider_track {
+	display: flex;
+	animation: scroll 30s linear infinite;
+}
+.partner .logo_item {
+	margin-left: 1rem;
+	padding: 1rem;
+}
+.partner .logo_item img {
+	height: 7rem;
+	margin-inline: 2rem;
+}
+@keyframes scroll {
+	0% {
+		transform: translateX(0);
+	}
+	45% {
+		transform: translateX(-77%);
+	}
+	50% {
+		transform: translateX(-77%);
+	}
+	95% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
 .cta {
 	background: var(--main-color);
 	padding: 70px 17%;

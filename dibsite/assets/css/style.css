@@ -311,39 +311,32 @@ header .logo {
 .partner h2 {
 	font-size: var(--h2-font);
 }
-.partner .logos_slider {
-	margin-top: 4rem;
-	overflow-x: hidden;
-	position: relative;
-}
-.partner .slider_track {
+.partner .logo_container {
 	display: flex;
-	animation: scroll 30s linear infinite;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 2rem;
+}
+.partner .logo_wrapper {
 }
 .partner .logo_item {
 	margin-left: 1rem;
 	padding: 1rem;
+	display: flex;
+	flex-direction: column;
 }
 .partner .logo_item img {
 	height: 7rem;
 	margin-inline: 2rem;
+	transition: .3s ease;
 }
-@keyframes scroll {
-	0% {
-		transform: translateX(0);
-	}
-	45% {
-		transform: translateX(-77%);
-	}
-	50% {
-		transform: translateX(-77%);
-	}
-	95% {
-		transform: translateX(0);
-	}
-	100% {
-		transform: translateX(0);
-	}
+.partner .logo_item img:hover {
+	transform: scale(1.1);
+	transition: .4s;
+}
+.partner .logo_item p {
+	text-align: center;
+	font-size: 12px;
 }
 .cta {
 	background: var(--main-color);

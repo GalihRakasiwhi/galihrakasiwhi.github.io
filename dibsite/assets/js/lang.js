@@ -36,7 +36,7 @@ let data = {
 		about_p: "Dibsite is a designed place to create comfortable, productive, and collaborative workspaces for various communities, inovators, content creators, digital creative entities or entrepreneurs in Bandung.",
 		about_btn: "Contact Us",
 		benefit_container_text: "Benefit",
-		benefit_title: "Why choosing us?",
+		benefit_title: "Why Choosing Us?",
 		benefit_p_card1: "It is located in a strategic elite area in Bandung, supported by easy access for them who live in the city or out of the city.",
 		benefit_p_card2: "Alternative workspaces are available in various capacities which is suitable for private office, coworking, meeting room, classroom and function room.",
 		benefit_p_card3: "An open working area, podcast studio, photo/ video studio, lounge room are available as well.",

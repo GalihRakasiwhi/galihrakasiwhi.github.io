@@ -56,8 +56,8 @@ let data = {
 		facility_card5_p: "Provide a credible and professional office address for business need completed with correspondence service, the use of meeting room and coworking.",
 		facility_card6_title: "Online Meeting Room",
 		facility_card6_p: "A soundproof online meeting room is available for the privacy convenience during the meeting.",
-		//facility_card7_title: "PodCast Studio",
-		//facility_card7_p: "A recording room which is for the making of digital content.",
+		facility_card7_title: "PodCast Studio",
+		facility_card7_p: "A recording room which is for the making of digital content.",
 		facility_card8_title: "Photo Studio",
 		facility_card8_p: "The studio is completed with good quality lighting and various screens.",
 		services_container_text: "Services",
@@ -109,8 +109,8 @@ let data = {
 		facility_card5_p: "Menyediakan alamat kantor yang kredibel dan profesional untuk kebutuhan bisnis. Dapat di lengkapi berbagai layanan lain seperti layanan surat menyurat,  penggunaan ruang meeting & coworking.",
 		facility_card6_title: "Online Meeting Room",
 		facility_card6_p: "Ruang meeting online yang didesign kedap suara bertujuan untuk menjaga privasi pada saat meeting online.",
-		//facility_card7_title: "PodCast Studio",
-		//facility_card7_p: "Ruang rekaman asli audio atau video yang dapat digunakan utuk kebutuhan pembuatan konten digital.",
+		facility_card7_title: "PodCast Studio",
+		facility_card7_p: "Ruang rekaman asli audio atau video yang dapat digunakan utuk kebutuhan pembuatan konten digital.",
 		facility_card8_title: "Photo Studio",
 		facility_card8_p: "Studio Foto dan video yang dilengkapi dengan lighting yang berkualitas serta berbagai pilihan screen.",
 		services_container_text: "Services",
@@ -164,8 +164,8 @@ function translate(konten) {
 	document.querySelector("[data_key='facility_card5_p']").innerHTML = konten.facility_card5_p;
 	document.querySelector("[data_key='facility_card6_title']").innerHTML = konten.facility_card6_title;
 	document.querySelector("[data_key='facility_card6_p']").innerHTML = konten.facility_card6_p;
-	//document.querySelector("[data_key='facility_card7_title']").innerHTML = konten.facility_card7_title;
-	//document.querySelector("[data_key='facility_card7_p']").innerHTML = konten.facility_card7_p;
+	document.querySelector("[data_key='facility_card7_title']").innerHTML = konten.facility_card7_title;
+	document.querySelector("[data_key='facility_card7_p']").innerHTML = konten.facility_card7_p;
 	document.querySelector("[data_key='facility_card8_title']").innerHTML = konten.facility_card8_title;
 	document.querySelector("[data_key='facility_card8_p']").innerHTML = konten.facility_card8_p;
 	document.querySelector("[data_key='services_container_text']").innerHTML = konten.services_container_text;

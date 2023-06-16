@@ -450,6 +450,47 @@ header .logo {
 }
 
 
+.calender {
+	display: grid;
+	grid-template-columns: repeat(2);
+	grid-gap: 1.5rem;
+	align-items: center;
+	padding: 70px 10%;
+	margin: 70px 0;
+	transition: all 1s;
+}
+.calender .calender-wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 2fr);
+}
+.calender .calender-table-header {
+	display: grid;
+	grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
+	padding: 10px;
+}
+.calender .calender-table-header .table-col {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid lightgrey;
+}
+.calender .calender-table-body {
+	display: grid;
+	grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
+	padding: 10px;
+}
+.calender .calender-table-body .table-col {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid lightgrey;
+	padding: 20px;
+}
+.calender .table-col.disabled {
+	color: grey;
+	background-color: lightgrey;
+}
+
 @media (max-width: 1560px) {
 	header {
 		padding: 15px 40px;

@@ -93,22 +93,26 @@ header .logo {
 	color: var(--main-color);
 	transition: .4s;
 }
-.langs {
+.nav-container .langs {
 	margin: auto 5px auto 0;
 }
-.langs button {
+.nav-container .langs button {
 	color: white;
 	border: none;
 	background-color: var(--main-color);
 	padding: 5px 10px;
 	transition: .5s;
 }
-.langs button:hover {
+.nav-container .langs button:hover {
 	cursor: pointer;
 	background-color: var(--main-color-hover);
 }
-.langs button.active {
+.nav-container .langs button.active {
 	background-color: var(--secondary-color);	
+}
+.nav-container a {
+	display: flex;
+	align-items: center;
 }
 .nav-container .logo_partner {
 	width: 4rem;

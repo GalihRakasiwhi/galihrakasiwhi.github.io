@@ -314,6 +314,7 @@ header .logo {
 .tenant .logo_container {
 	display: flex;
 	flex-wrap: wrap;
+	align-items: center;
 	justify-content: center;
 	margin-top: 2rem;
 	width: 100%;
@@ -331,6 +332,10 @@ header .logo {
   	-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
   	filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
 	transition: .3s ease;
+}
+.tenant .logo_item img.logo-lebar {
+	width: 7rem;
+	height: 7rem;
 }
 .tenant .logo_item img:hover {
 	-webkit-filter: grayscale(0);

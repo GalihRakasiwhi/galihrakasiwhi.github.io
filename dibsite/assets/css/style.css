@@ -47,6 +47,7 @@ header {
 	width: 100%;
 	z-index: 1000;
 	display: flex;
+	gap: 10px;
 	align-items: center;
 	justify-content: space-between;
 	padding: 30px 170px;
@@ -92,9 +93,6 @@ header .logo {
 .navbar a:hover {
 	color: var(--main-color);
 	transition: .4s;
-}
-.nav-container .langs {
-	margin: auto 5px auto 0;
 }
 .nav-container .langs button {
 	color: white;

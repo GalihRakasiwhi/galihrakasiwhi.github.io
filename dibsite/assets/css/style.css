@@ -94,6 +94,10 @@ header .logo {
 	color: var(--main-color);
 	transition: .4s;
 }
+.nav-container .langs {
+	display: flex;
+	flex-wrap: nowrap;
+}
 .nav-container .langs button {
 	color: white;
 	border: none;

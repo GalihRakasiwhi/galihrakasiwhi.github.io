@@ -492,9 +492,9 @@ header .logo {
 	max-width: 600px;
 	width: 100%;
 }
-.calendar .calendar {
+.calendar .calendar-container {
 	display: grid;
-	grid-template-columns: repeat(2, 2fr);
+	grid-template-columns: repeat(1, 1fr);
 }
 .calendar .calendar-table {
 	display: none;

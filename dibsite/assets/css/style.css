@@ -481,45 +481,126 @@ header .logo {
 }
 
 
-.calender {
+.calendar {
 	display: grid;
 	grid-template-columns: repeat(2);
 	grid-gap: 1.5rem;
 	align-items: center;
-	padding: 70px 10%;
-	margin: 70px 0;
+	padding: 70px 30px;
+	margin: 70px auto;
 	transition: all 1s;
+	max-width: 600px;
+	width: 100%;
 }
-.calender .calender-wrapper {
+.calendar .calendar {
 	display: grid;
 	grid-template-columns: repeat(2, 2fr);
 }
-.calender .calender-table-header {
+.calendar .calendar-table {
+	display: none;
+}
+.calendar .calendar-table-header {
 	display: grid;
 	grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
 	padding: 10px;
 }
-.calender .calender-table-header .table-col {
+.calendar .calendar-table-header .table-col {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	border: 1px solid lightgrey;
 }
-.calender .calender-table-body {
+.calendar .calendar-table-body {
 	display: grid;
 	grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
 	padding: 10px;
 }
-.calender .calender-table-body .table-col {
+.calendar .calendar-table-body .table-col {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	border: 1px solid lightgrey;
 	padding: 20px;
 }
-.calender .table-col.disabled {
+.calendar .table-col.disabled {
 	color: grey;
 	background-color: lightgrey;
+}
+
+.calendar .schedule-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+.calendar .schedule-wrapper .info-end {
+	color: grey;
+	text-align: center;
+}
+.calendar .schedule-wrapper h4 {
+	padding: 5px 20px;
+	margin: 10px 0;
+	background-color: var(--main-color);
+	color: white;
+	border-radius: 1vh;
+}
+.calendar .schedule-list {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.calendar .schedule-list-item {
+	padding: 10px 20px;
+	border: 1px solid lightgrey;
+	transition: .3s ease;
+}
+.calendar .schedule-list-item:hover {
+	background-color: #eee;
+}
+.calendar .schedule-list-item.approved {
+	border-left: 5px solid green;
+}
+.calendar .schedule-list-item.booking {
+	border-left: 5px solid goldenrod;
+}
+.calendar .schedule-list-item.cancel {
+	background-color: var(--secondary-color-soft);
+	color: grey;
+	border-left: 5px solid red;
+}
+
+.calendar .schedule-list-item .date {
+	font-size: small;
+}
+.calendar .schedule-list-item .schedule-title {
+	font-size: large;
+	font-weight: 600;
+}
+.calendar .schedule-list-item .info .status{
+	margin-top: 5px;
+}
+.calendar .schedule-list-item .badge{
+	font-size: small;
+	padding: 3px 15px;
+	color: white;
+	border-radius: 2vh;
+}
+.calendar .schedule-list-item .badge.approved {
+	background: green;
+}
+.calendar .schedule-list-item .badge.booking {
+	background: goldenrod;
+}
+.calendar .schedule-list-item .badge.cancel {
+	background: red;
+}
+
+.calendar .schedule-list-item .badge.function-room {
+	color: var(--main-color);
+	border: 1px solid var(--main-color);;
+}
+.calendar .schedule-list-item .badge.class-room {
+	color: var(--secondary-color);
+	border: 1px solid var(--secondary-color);
 }
 
 @media (max-width: 1560px) {
@@ -542,7 +623,7 @@ header .logo {
 	}
 	header .navbar {
 		position: absolute;
-		top: -400px;
+		top: -500px;
 		left: 0;
 		right: 0;
 		display: flex;

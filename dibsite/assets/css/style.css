@@ -537,8 +537,8 @@ header .logo {
 	text-align: center;
 }
 .calendar .schedule-wrapper h4 {
-	padding: 5px 20px;
-	margin: 10px 0;
+	padding: 5px 10px;
+	margin: 30px 0;
 	background-color: var(--main-color);
 	color: white;
 	border-radius: 1vh;
@@ -549,6 +549,9 @@ header .logo {
 	gap: 20px;
 }
 .calendar .schedule-list-item {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
 	padding: 10px 20px;
 	border: 1px solid lightgrey;
 	transition: .3s ease;

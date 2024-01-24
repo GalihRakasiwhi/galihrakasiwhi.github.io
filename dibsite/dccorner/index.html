@@ -19,7 +19,7 @@
       }
       .menu .page {
         position: fixed;
-        margin: 1rem;
+        margin: 1rem 0;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -39,12 +39,34 @@
       .menu img {
         width: 100%;
       }
+      #button-float {
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+      }
+      #button-float img {
+        height: 40px;
+        cursor: pointer;
+        transition: 0.3s ease;
+      }
+      #button-float img:hover {
+        opacity: 0.9;
+        transform: scale(1.1);
+      }
       @media (max-width: 720px) {
         .menu .page a {
           font-size: 10pt;
         }
         section.head {
           height: 50px;
+        }
+        #button-float {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+        }
+        #button-float img {
+          height: 30px;
         }
       }
     </style>
@@ -55,12 +77,22 @@
         <a href="#menu-1">Page 1</a>
         <a href="#menu-2">Page 2</a>
         <a href="#menu-3">Page 3</a>
+		<a href="#menu-4">Page 4</a>
       </div>
       <section class="head"></section>
       <section class="image">
-        <img id="menu-1" src="menu-1.jpg" />
-        <img id="menu-2" src="menu-2.jpg" />
-        <img id="menu-3" src="menu-3.jpg" />
+        <img id="menu-1" src="images/menu-1.jpg" />
+        <img id="menu-2" src="images/menu-2.jpg" />
+        <img id="menu-3" src="images/menu-3.jpg" />
+		<img id="menu-4" src="images/menu-4.jpg" />
+      </section>
+      <section id="button-float">
+        <a
+          href="https://api.whatsapp.com/send?phone=6285703398860&text=Nama%20%09%09%3A%20Nama%20kamu%0ARuang%2FMeja%09%3A%20Indor%2F1%0APesanan%09%09%3A%0A-%20pesanan%201%0A-%20pesanan%202"
+          target="_blank"
+        >
+          <img src="images/pesan-disini.svg" />
+        </a>
       </section>
     </div>
   </body>

@@ -9,7 +9,7 @@
 }
 @font-face {
   font-family: 'MV Boli', sans-serif;
-  url: url('../fonts/mvboli.ttf') format('truetype');
+  src: url('../fonts/mvboli.ttf') format('truetype');
 }
 :root {
   --main-color: #15b3d8;
@@ -133,8 +133,8 @@ header .logo {
   padding: 70px 0;
 }
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 8)),
-    url('../images/depan-gedung.jpeg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url('../images/depan-gedung-clear.jpeg');
   height: 100%;
   background-position: left;
   background-repeat: no-repeat;

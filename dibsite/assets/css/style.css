@@ -365,9 +365,8 @@ header .logo {
   width: 7rem;
   height: 7rem;
 }
-.partner .logo_item img.logo-lebar2 {
-  width: 8rem;
-  height: 8rem;
+.tenant .logo_item img.logo-lebar2 {
+  height: 3rem;
 }
 .partner .logo_item img:hover,
 .tenant .logo_item img:hover {
